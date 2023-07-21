@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^create net/create.php [NC,L]
+RewriteRule ^login/([^/]+)/([^/]+)$ net/read.php?login=$1&pwd=$2 [QSA,L]
+RewriteRule ^login index.php [QSA,L]
